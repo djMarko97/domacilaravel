@@ -1,0 +1,47 @@
+GET http://127.0.0.1:8000/api/knjigas HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/api/knjigas HTTP/1.1
+Content-Type: application/json
+
+{
+    "Naziv": "Knjiga3",
+    "Autor": "Autor3",
+    "Broj strana": "445",
+    "Izdavac": "Izdavac3",
+    "Zanr": "Zanr2"
+}
+
+###
+
+PUT http://127.0.0.1:8000/api/knjigas/2
+Content-Type: application/json
+
+{
+    "Naziv": "Knjiga1",
+    "Autor": "Autor2",
+    "Broj strana": "345",
+    "Izdavac": "Izdavac1",
+    "Zanr": "Zanr2"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/api/knjigas/1
+
+
+###
+
+GET http://127.0.0.1:8000/api/iznajmljivanjes HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/api/iznajmljivanjes HTTP/1.1
+Content-Type: application/json
+
+{
+    "Ime": "Marko",
+    "Prezime": "Djordjeivc",
+    "Knjiga": 3
+}
